@@ -51,7 +51,7 @@ const Login = () => {
       />
       <input
         className="inputbox-1"
-        type=""
+        type="password"
         name=""
         required
         id=""
