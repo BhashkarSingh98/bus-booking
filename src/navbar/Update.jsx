@@ -130,7 +130,6 @@ const Update = () => {
   const [name, setname] = useState("");
   const [gender, setgender] = useState("");
   const [seatNo, setseatNo] = useState("");
-  const [booked, setbooked] = useState("");
   const params = useParams();
   const navigate = useNavigate();
 
@@ -140,27 +139,27 @@ const Update = () => {
   },[]);
 
   const getproductdet = async () => {
-    let result = await fetch(`http://localhost:8000/product/${params.id}`);
+    let result = await fetch(`https://long-tan-crane-hem.cyclic.app/passenger/${params.id}`);
     result = await result.json();
 
     console.log(result);
     setname(result.name);
     setgender(result.gender);
     setseatNo(result.seatNo);
-    setbooked(result.booked);
   };
 
   const updateproduct = async () => {
-    console.log(name, gender, seatNo, booked);
-    let result = await fetch(`http://localhost:8000/product/${params.id}`, {
+    console.log(name, gender, seatNo);
+    let result = await fetch(`https://long-tan-crane-hem.cyclic.app/passenger/${params.id}`, {
       method: "Put",
-      body: JSON.stringify({ name, gender, seatNo, booked }),
+      body: JSON.stringify({ name, gender, seatNo }),
       headers: {
         "Content-Type": "application/json",
       },
     });
     result = await result.json();
     console.log(result);
+    alert("Ticket Confirmed ")
     navigate("/booknow");
   };
 
@@ -171,12 +170,12 @@ const Update = () => {
 
         </div>
         <div className="login-box-2">
-      <h1 className="register">Update</h1>
+      <h1 className="register">Details</h1>
       
       <input
         type="text"
         className="inputbox"
-        placeholder="enter img src"
+        placeholder="NAME"
         value={name}
         onChange={(e) => setname(e.target.value)}
       />
@@ -184,7 +183,7 @@ const Update = () => {
       <input
         type="text"
         className="inputbox"
-        placeholder="enter title"
+        placeholder="GENDER"
         value={gender}
         onChange={(e) => setgender(e.target.value)}
       />
@@ -192,22 +191,14 @@ const Update = () => {
       <input
         type="text"
         className="inputbox"
-        placeholder="enter about blog"
+        placeholder="SEAT-NO"
         value={seatNo}
-        onChange={(e) => setseatNo(e.target.value)}
-      />
-
-      <input
-        type="text"
-        className="inputbox"
-        placeholder="enter page name"
-        value={booked}
-        onChange={(e) => setbooked(e.target.value)}
+        
       />
 
 
       <button className="buttonsignup" onClick={updateproduct}>
-        Update Blog
+        CONFIRM
       </button>
     </div>
     </div>
