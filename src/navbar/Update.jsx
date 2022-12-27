@@ -13,7 +13,7 @@ const Update = () => {
   useEffect(() => {
     console.log(params);
     getproductdet();
-  });
+  },[]);
 
   const getproductdet = async () => {
     let result = await fetch(`https://long-tan-crane-hem.cyclic.app/passenger/${params.id}`);
