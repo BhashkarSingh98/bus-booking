@@ -11,20 +11,31 @@ const Update = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    getproductdet();
-  }, [getproductdet,updateproduct]);
+    const getproductdet = async () => {
+      let result = await fetch(
+        `https://long-tan-crane-hem.cyclic.app/passenger/${params.id}`
+      );
+      result = await result.json();
+  
+      console.log(result);
+      setname(result.name);
+      setgender(result.gender);
+      setseatNo(result.seatNo);
+    };
+    getproductdet()
+  },[params.id]);
 
-  const getproductdet = async () => {
-    let result = await fetch(
-      `https://long-tan-crane-hem.cyclic.app/passenger/${params.id}`
-    );
-    result = await result.json();
+  // const getproductdet = async () => {
+  //   let result = await fetch(
+  //     `https://long-tan-crane-hem.cyclic.app/passenger/${params.id}`
+  //   );
+  //   result = await result.json();
 
-    console.log(result);
-    setname(result.name);
-    setgender(result.gender);
-    setseatNo(result.seatNo);
-  };
+  //   console.log(result);
+  //   setname(result.name);
+  //   setgender(result.gender);
+  //   setseatNo(result.seatNo);
+  // };
 
   const updateproduct = async () => {
     console.log(name, gender, seatNo);
