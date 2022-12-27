@@ -11,7 +11,7 @@ const Login = () => {
     if (auth) {
       navigate("/");
     }
-  }, []);
+  });
 
   const handellogin = async () => {
     console.log(email, password);
