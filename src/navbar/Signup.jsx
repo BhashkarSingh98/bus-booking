@@ -24,7 +24,7 @@ const Signup = () => {
 
     const collectdata=async()=>{
         console.log(name,email,password);
-        let result=await fetch("http://localhost:8000/register",{
+        let result=await fetch("https://long-tan-crane-hem.cyclic.app/register",{
             method:"post",
             body:JSON.stringify({name,email,password}),
             headers:{

@@ -15,7 +15,7 @@ const Login = () => {
 
   const handellogin = async () => {
     console.log(email, password);
-    let result = await fetch("http://localhost:8000/login", {
+    let result = await fetch("https://long-tan-crane-hem.cyclic.app/login", {
       method: "post",
       body: JSON.stringify({ email, password }),
       headers: {
@@ -32,34 +32,6 @@ const Login = () => {
       alert("plz enter valid email and password");
     }
   };
-  // const [email, setemail] = useState("");
-  // const [password, setpassword] = useState("");
-  // const navigate = useNavigate();
-  // useEffect(() => {
-  //   const auth = localStorage.getItem("user");
-  //   if (auth) {
-  //     navigate("/");
-  //   }
-  // });
-
-  // const handellogin = async () => {
-  //   console.log(email, password);
-  //   let result = await fetch("http://localhost:5000/login", {
-  //     method: "post",
-  //     body: JSON.stringify({ email, password }),
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //   });
-  //   result = await result.json();
-  //   console.log(result);
-  //   if (result.name) {
-  //     localStorage.setItem("user", JSON.stringify(result));
-  //     navigate("/");
-  //   } else {
-  //     alert("plz enter valid email and password");
-  //   }
-  // };
   return (
     <div className="login">
         <div className="login-box-1">

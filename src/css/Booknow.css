@@ -1,0 +1,161 @@
+.booknowbox1{
+   width: 600px;
+   border: 1px solid rgb(13, 11, 11);
+   margin: auto;
+   display: flex;
+   box-sizing: border-box;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin-bottom: 50px;
+   
+   
+   
+}
+.booknowbox3{
+    height: 200px;
+    width: 200px; 
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+   
+
+
+}
+.booknowboximg{
+    display: flex;
+    height: 100px;
+    width: 200px; ;
+    flex-wrap: wrap;
+    
+
+}
+
+.booknowboximg img{
+    transform: rotate(90deg);
+    height: 150px;
+    width: 150px;
+
+}
+.booknowseatno{
+    position: relative;
+    left: -90px;
+    top: 30px;
+    font-size: 50px;
+
+}
+.bookseat{
+    height: 18px;
+    width: 108px;
+    background-color: rgba(23, 29, 215, 0.475);
+    border:1px solid rgb(15, 14, 14);
+    border-radius: 10px;
+    position: relative;
+    top: 118px;
+    left: -156px;
+    font-size: 14px;
+    color: white;
+    padding: 1px;
+
+}
+.bookseat:hover{
+    background-color: rgb(0, 42, 255);
+
+}
+.booked{
+    height: 18px;
+    width: 108px;
+    background-color: rgba(23, 29, 215, 0.475);
+    border:1px solid rgb(15, 14, 14);
+    border-radius: 10px;
+    position: relative;
+    top: 118px;
+    left: -156px;
+    font-size: 14px;
+    color: white;
+    padding: 1px;
+    visibility: hidden;
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+.booknowbox1{
+   width: 280px;
+   border: 1px solid rgb(13, 11, 11);
+   margin: auto;
+   display: flex;
+   box-sizing: border-box;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 50px;
+   padding: 20px;
+
+   
+   
+   
+}
+.booknowbox3{
+    height: 90px;
+    width:90px; 
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 20px;
+   
+
+
+}
+.booknowboximg{
+    display: flex;
+    height: 30px;
+    width:30px; 
+    
+
+}
+
+.booknowboximg img{
+    transform: rotate(90deg);
+    height: 100px;
+    width:100px;
+
+}
+.booknowseatno{
+    position: relative;
+    left: 10px;
+    top: 25px;
+    font-size: 30px;
+
+}
+.bookseat{
+    height: 18px;
+    width: 75px;
+    background-color: rgb(11, 11, 11);
+    border:1px solid rgb(15, 14, 14);
+    /* border-radius: 5px 5px 0px 0px; */
+    position: relative;
+    top: 75px;
+    left: -33px;
+    font-size: 10px;
+    color: white;
+    padding: 1px;
+
+}
+.bookseat:hover{
+    background-color: rgb(0, 42, 255);
+
+}
+.booked{
+    height: 18px;
+    width: 75px;
+    background-color: rgb(11, 11, 11);
+    border:1px solid rgb(15, 14, 14);
+    /* border-radius: 5px 5px 0px 0px; */
+    position: relative;
+    top: 75px;
+    left: -33px;
+    font-size: 10px;
+    color: white;
+    padding: 1px;
+    visibility: hidden;
+
+}
+}
