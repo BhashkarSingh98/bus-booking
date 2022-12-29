@@ -14,7 +14,7 @@ const Signup = () => {
   
       const auth=localStorage.getItem("user")
       if(auth){
-        //navigate("/")
+        //navigate("/login")
   
       }
   
@@ -37,8 +37,8 @@ const Signup = () => {
         localStorage.setItem("user",JSON.stringify(result.result));
         localStorage.setItem("token", JSON.stringify(result.auth));
 
-        if(result){
-            //navigate("/login")
+         if(result){
+        //     // navigate("/login")
 
         }
     }
