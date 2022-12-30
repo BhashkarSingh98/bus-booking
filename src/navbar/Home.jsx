@@ -1,8 +1,8 @@
 import React from "react";
-//import Slider from './Slider'
 import "../css/Home.css";
 import Buscollection from "./Buscollection";
 import Searchbar from "./Searchbar";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -21,7 +21,10 @@ const Home = () => {
           <p className="p111">
             DON'T COMPROMISE ON OTHES! GET FLAT 30% OFF FOR NEW USERS.
           </p>
+          <Link to="/booknow">
+
           <button className="btn1">Book now</button>
+          </Link>
         </div>
       </div>
       <Buscollection/>

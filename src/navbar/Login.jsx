@@ -9,7 +9,7 @@ const Login = () => {
   useEffect(() => {
     const auth = localStorage.getItem("user");
     if (auth) {
-      navigate("/");
+      //navigate("/");
     }
   });
 
@@ -28,6 +28,7 @@ const Login = () => {
       localStorage.setItem("user", JSON.stringify(result.user));
       localStorage.setItem("token", JSON.stringify(result.auth));
       navigate("/");
+      alert("Login Successfully")
     } else {
       alert("plz enter valid email and password");
     }
@@ -51,7 +52,7 @@ const Login = () => {
       />
       <input
         className="inputbox-1"
-        type=""
+        type="password"
         name=""
         required
         id=""
