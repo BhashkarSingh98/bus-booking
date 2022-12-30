@@ -41,7 +41,7 @@ const Navlink = () => {
                   </NavLink>
                 </li>
                 <li id="l5">
-                  <NavLink className="a" id="a5" to="/contect">
+                  <NavLink className="a" id="a5" to="/admin">
                   Contect
                   </NavLink>
                 </li>
