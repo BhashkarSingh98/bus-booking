@@ -8,6 +8,7 @@ import Login from './Login';
 import Update from './Update';
 import Booknow from './Booknow';
 import Admin from './Admin';
+import Adminupdate from './Adminupdate';
 
 const Navbar = () => {
   return (
@@ -19,8 +20,9 @@ const Navbar = () => {
         <Route element={<Private/>}>
         <Route  path="/"  element={<Home/>} />
         <Route path='/booknow' element={<Booknow/>}/>
-        <Route path='/admin' element={<Admin/>}/>
         <Route path='/update/:id' element={<Update/>}/>
+        <Route path='/admin1' element={<Admin/>}/>
+        <Route path='/admin/:id' element={<Adminupdate/>}/>
         </Route>
         <Route path='/signup' element={<Signup/>}/>
       <Route path='/login' element={<Login/>}/>

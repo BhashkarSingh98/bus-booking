@@ -42,12 +42,12 @@ const Admin = () => {
                 </div>
                 <div className="booknowicons">
                  
-                    <Link to={"/update/" + item._id}>
-                      <button style={{display:`${item.display}`}} className="bookseat">Book Seat</button>
+                    <Link to={"/admin/" + item._id}>
+                      <button  className="bookseat">update</button>
                     </Link>
-                    <button style={{visibility:`${item.visibility}`}} className="booked" onClick={()=>{
+                    {/* <button style={{visibility:`${item.visibility}`}} className="booked" onClick={()=>{
                       alert(" this seat already booked..")
-                    }}>Booked</button>
+                    }}>Booked</button> */}
 
                  
                   
