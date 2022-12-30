@@ -50,13 +50,13 @@ const Signup = () => {
         <div className="from-box-2">
         <h1 className='register'>SIGN UP</h1>
         <input type="text" required placeholder='enter name' className='inputbox' value={name} onChange={(e)=>setname(e.target.value)}/>
-        <input type="email" required placeholder='enter email' className='inputbox' value={email} onChange={(e)=>setemail(e.target.value)}/>
+        <input type="email" required placeholder='Enter email' className='inputbox' value={email} onChange={(e)=>setemail(e.target.value)}/>
         <input type="password" required placeholder='enter password' className='inputbox' value={password} onChange={(e)=>setpassword(e.target.value)}/>
         <br/>
         <Link to="/login">
         <button onClick={collectdata} type='button' className='buttonsignup'>sign up</button>
         </Link>
-
+        
         </div>
     </div>
   )
