@@ -48,7 +48,7 @@ const Login = () => {
       <h1 className="register">Log In</h1>
       <input
         className="inputbox-1"
-        type="text"
+        type="email"
         name=""
         id=""
         required
