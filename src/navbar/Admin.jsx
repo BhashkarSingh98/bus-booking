@@ -21,7 +21,7 @@ const Admin = () => {
   return (
     <div className="product_list">
       <div className="the-lesest">
-        <h1>Book Now</h1>
+        <h1>Admin Page</h1>
         <div style={{width:"180px"}} className="underline-1"></div>
       </div>
 
@@ -43,11 +43,11 @@ const Admin = () => {
                 <div className="booknowicons">
                  
                     <Link to={"/adminupdate/" + item._id}>
-                      <button  className="bookseat">update</button>
+                      <button style={{display:`${item.display}`}} className="bookseat">Not Booked</button>
                     </Link>
-                    {/* <button style={{visibility:`${item.visibility}`}} className="booked" onClick={()=>{
-                      alert(" this seat already booked..")
-                    }}>Booked</button> */}
+                    <Link to={"/adminupdate/" + item._id}>
+                    <button style={{visibility:`${item.visibility}`}} className="booked">Booked</button>
+                    </Link>
 
                  
                   

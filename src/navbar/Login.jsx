@@ -8,8 +8,9 @@ const Login = () => {
   const navigate = useNavigate();
   useEffect(() => {
     const auth = localStorage.getItem("user");
+    
     if (auth) {
-      //navigate("/");
+      navigate("/");
     }
   });
 
@@ -23,8 +24,13 @@ const Login = () => {
       },
     });
     result = await result.json();
+    console.log("result");
     console.log(result);
-    if (result.auth) {
+    if(result.admin===1){
+      localStorage.setItem("user", JSON.stringify(result.user));
+      localStorage.setItem("token", JSON.stringify(result.auth));
+      navigate("/admin");
+    }else if (result.auth) {
       localStorage.setItem("user", JSON.stringify(result.user));
       localStorage.setItem("token", JSON.stringify(result.auth));
       navigate("/");
@@ -46,7 +52,7 @@ const Login = () => {
         name=""
         id=""
         required
-        placeholder="enter email"
+        placeholder="Admin Email - admin@123.com"
         value={email}
         onChange={(e) => setemail(e.target.value)}
       />
@@ -56,7 +62,7 @@ const Login = () => {
         name=""
         required
         id=""
-        placeholder="enter password"
+        placeholder="Admin Password - admin"
         value={password}
         onChange={(e) => setpassword(e.target.value)}
       />

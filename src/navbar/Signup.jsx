@@ -1,5 +1,5 @@
 import React, { useState ,useEffect} from 'react'
-//import {useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 import "../App.css"
 import { Link } from 'react-router-dom'
 
@@ -8,13 +8,13 @@ const Signup = () => {
   const [name,setname]=useState("")
     const [email,setemail]=useState("")
     const [password,setpassword]=useState("")
-    //const navigate=useNavigate()
+    const navigate=useNavigate()
 
     useEffect(()=>{
   
       const auth=localStorage.getItem("user")
       if(auth){
-        //navigate("/login")
+        navigate("/login")
   
       }
   
@@ -34,11 +34,11 @@ const Signup = () => {
         result=await result.json()
         console.log(result);
         alert("Registration Successfully")
-        localStorage.setItem("user",JSON.stringify(result.result));
-        localStorage.setItem("token", JSON.stringify(result.auth));
+        //localStorage.setItem("user",JSON.stringify(result.result));
+        //localStorage.setItem("token", JSON.stringify(result.auth));
 
          if(result){
-        //     // navigate("/login")
+        navigate("/login")
 
         }
     }

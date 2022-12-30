@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
-const Adminupdate = () => {
+const Adminpdate = () => {
   const [name, setname] = useState("");
   const [gender, setgender] = useState("");
   const [seatNo, setseatNo] = useState("");
@@ -13,7 +13,7 @@ const Adminupdate = () => {
   useEffect(() => {
     const getproductdet = async () => {
       let result = await fetch(
-        `https://long-tan-crane-hem.cyclic.app/admin/${params.id}`
+        `https://long-tan-crane-hem.cyclic.app/passenger/${params.id}`
       );
       result = await result.json();
   
@@ -25,6 +25,17 @@ const Adminupdate = () => {
     getproductdet()
   },[params.id]);
 
+  // const getproductdet = async () => {
+  //   let result = await fetch(
+  //     `https://long-tan-crane-hem.cyclic.app/passenger/${params.id}`
+  //   );
+  //   result = await result.json();
+
+  //   console.log(result);
+  //   setname(result.name);
+  //   setgender(result.gender);
+  //   setseatNo(result.seatNo);
+  // };
 
   const updateproduct = async () => {
     console.log(name, gender, seatNo);
@@ -40,8 +51,8 @@ const Adminupdate = () => {
     );
     result = await result.json();
     console.log(result);
-    alert("Ticket Confirmed ");
-    navigate("/admin1");
+    alert("Ticket Removed ");
+    navigate("/admin");
   };
 
   return (
@@ -50,6 +61,7 @@ const Adminupdate = () => {
         <div className="from-box-1"></div>
         <div className="login-box-2">
           <h1 className="register">Details</h1>
+          <p style={{color:"red",marginTop:"-30px",marginBottom:"20px",width:"90%",fontSize:"1rem"}}>Please remove Name and Gender</p>
 
           <input
             type="text"
@@ -74,8 +86,8 @@ const Adminupdate = () => {
             value={seatNo}
           />
 
-          <button className="buttonsignup" onClick={updateproduct}>
-            CONFIRM
+          <button style={{backgroundColor:"#FF0000"}} className="buttonsignup" onClick={updateproduct}>
+            REMOVE
           </button>
         </div>
       </div>
@@ -83,4 +95,4 @@ const Adminupdate = () => {
   );
 };
 
-export default Adminupdate;
+export default Adminpdate;

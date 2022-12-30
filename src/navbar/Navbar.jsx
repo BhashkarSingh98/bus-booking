@@ -21,7 +21,7 @@ const Navbar = () => {
         <Route  path="/"  element={<Home/>} />
         <Route path='/booknow' element={<Booknow/>}/>
         <Route path='/update/:id' element={<Update/>}/>
-        <Route path='/admin1' element={<Admin/>}/>
+        <Route path='/admin' element={<Admin/>}/>
         <Route path='/adminupdate/:id' element={<Adminupdate/>}/>
         </Route>
         <Route path='/signup' element={<Signup/>}/>
