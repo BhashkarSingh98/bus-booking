@@ -30,7 +30,7 @@ const Buslist = () => {
           </p>
           <p className="buslist-busprice">
             <span>Price -  </span>
-            <span style={{color:"red"}}>&#8377;  1200</span>
+            <span style={{color:"red"}}>&#8377;  1800</span>
           </p>
           <Link to="/bookseat">
             <button className="buslist-btn">Book Now</button>
@@ -53,7 +53,7 @@ const Buslist = () => {
           </p>
           <p className="buslist-busprice">
             <span>Price -  </span>
-            <span style={{color:"red"}}>&#8377; 1200</span>
+            <span style={{color:"red"}}>&#8377; 2000</span>
           </p>
           <Link to="/bookseat">
             <button className="buslist-btn">Book Now</button>
@@ -99,7 +99,7 @@ const Buslist = () => {
           </p>
           <p className="buslist-busprice">
             <span>Price -  </span>
-            <span style={{color:"red"}}>&#8377; 1200</span>
+            <span style={{color:"red"}}>&#8377; 1000</span>
           </p>
           <Link to="/bookseat">
             <button className="buslist-btn">Book Now</button>
@@ -122,7 +122,7 @@ const Buslist = () => {
           </p>
           <p className="buslist-busprice">
             <span>Price -  </span>
-            <span style={{color:"red"}}>&#8377; 1200</span>
+            <span style={{color:"red"}}>&#8377; 1300</span>
           </p>
           <Link to="/bookseat">
             <button className="buslist-btn">Book Now</button>
@@ -145,7 +145,7 @@ const Buslist = () => {
           </p>
           <p className="buslist-busprice">
             <span>Price -  </span>
-            <span style={{color:"red"}}>&#8377; 1200</span>
+            <span style={{color:"red"}}>&#8377; 1500</span>
           </p>
           <Link to="/bookseat">
             <button className="buslist-btn">Book Now</button>
