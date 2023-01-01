@@ -21,7 +21,7 @@ const Booknow = () => {
   return (
     <div className="product_list">
       <div className="the-lesest">
-        <h1>Book Now</h1>
+        <h1>Book Seat</h1>
         <div style={{width:"180px"}} className="underline-1"></div>
       </div>
 

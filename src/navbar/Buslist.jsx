@@ -28,6 +28,10 @@ const Buslist = () => {
             <span>Date - </span>
             <span>{currdate}</span>
           </p>
+          <p className="buslist-busprice">
+            <span>Price -  </span>
+            <span style={{color:"red"}}>&#8377;  1200</span>
+          </p>
           <Link to="/bookseat">
             <button className="buslist-btn">Book Now</button>
           </Link>
@@ -46,6 +50,10 @@ const Buslist = () => {
           <p className="buslist-bustime">
             <span>Date - </span>
             <span>{currdate}</span>
+          </p>
+          <p className="buslist-busprice">
+            <span>Price -  </span>
+            <span style={{color:"red"}}>&#8377; 1200</span>
           </p>
           <Link to="/bookseat">
             <button className="buslist-btn">Book Now</button>
@@ -66,6 +74,10 @@ const Buslist = () => {
             <span>Date - </span>
             <span>{currdate}</span>
           </p>
+          <p className="buslist-busprice">
+            <span>Price -  </span>
+            <span style={{color:"red"}}>&#8377; 1200</span>
+          </p>
           <Link to="/bookseat">
             <button className="buslist-btn">Book Now</button>
           </Link>
@@ -84,6 +96,10 @@ const Buslist = () => {
           <p className="buslist-bustime">
             <span>Date - </span>
             <span>{currdate}</span>
+          </p>
+          <p className="buslist-busprice">
+            <span>Price -  </span>
+            <span style={{color:"red"}}>&#8377; 1200</span>
           </p>
           <Link to="/bookseat">
             <button className="buslist-btn">Book Now</button>
@@ -104,6 +120,10 @@ const Buslist = () => {
             <span>Date - </span>
             <span>{currdate}</span>
           </p>
+          <p className="buslist-busprice">
+            <span>Price -  </span>
+            <span style={{color:"red"}}>&#8377; 1200</span>
+          </p>
           <Link to="/bookseat">
             <button className="buslist-btn">Book Now</button>
           </Link>
@@ -122,6 +142,10 @@ const Buslist = () => {
           <p className="buslist-bustime">
             <span>Date - </span>
             <span>{currdate}</span>
+          </p>
+          <p className="buslist-busprice">
+            <span>Price -  </span>
+            <span style={{color:"red"}}>&#8377; 1200</span>
           </p>
           <Link to="/bookseat">
             <button className="buslist-btn">Book Now</button>
