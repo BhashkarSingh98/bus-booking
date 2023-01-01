@@ -41,7 +41,7 @@ const Buslist = () => {
           <p className="busname">Indigo</p>
           <p className="buslist-add1">
             <span>Dehradun</span> <span>-To- </span>
-            <span>Mnali</span>
+            <span>Manali</span>
           </p>
           <p className="buslist-bustime">
             <span>Date - </span>
