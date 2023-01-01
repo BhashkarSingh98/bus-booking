@@ -53,7 +53,7 @@ const Update = () => {
     result = await result.json();
     console.log(result);
     alert("Ticket Confirmed ");
-    navigate("/booknow");
+    navigate("/bookseat");
   };
 
   return (

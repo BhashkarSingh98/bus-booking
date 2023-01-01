@@ -1,0 +1,48 @@
+.buslist{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bus-card{
+    height: 350px;
+    width: 250px;
+    margin: 20px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 5px 35px #00000008;
+
+}
+.buslist-img{
+    height: 200px;
+    width: 250px;
+    border-radius: 10px 10px 0 0;
+}
+.busname{
+    font-size: 25px;
+    color: black;
+    margin-left: 2%;
+}
+.buslist-add1{
+    font-size: 20px;
+    color: black;
+    margin-left: 2%;
+
+}
+.buslist-bustime{
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+    margin-left: 2%;
+
+}
+.buslist-btn{
+    padding: 2px;
+    font-size: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1.5px solid black;
+    margin-top: 10px;
+    margin-left: 2%;
+
+}
