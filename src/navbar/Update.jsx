@@ -37,7 +37,8 @@ const Update = () => {
   //   setseatNo(result.seatNo);
   // };
 
-  const updateproduct = async () => {
+  const updateproduct = async (e) => {
+    e.preventDefault()
     console.log(name, gender, seatNo);
     let result = await fetch(
       `https://long-tan-crane-hem.cyclic.app/passenger/${params.id}`,
@@ -61,6 +62,10 @@ const Update = () => {
         <div className="from-box-1"></div>
         <div className="login-box-2">
           <h1 className="register">Details</h1>
+
+          <form onSubmit={updateproduct}>
+
+      
 
           <input
             type="text"
@@ -87,9 +92,10 @@ const Update = () => {
             value={seatNo}
           />
 
-          <button className="buttonsignup" onClick={updateproduct}>
+          <button type="submit" className="buttonsignup" >
             CONFIRM
           </button>
+          </form>
         </div>
       </div>
     </div>

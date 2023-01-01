@@ -68,7 +68,6 @@ const Adminpdate = () => {
             className="inputbox"
             placeholder="NAME"
             value={name}
-            required
             onChange={(e) => setname(e.target.value)}
           />
 
@@ -77,7 +76,6 @@ const Adminpdate = () => {
             className="inputbox"
             placeholder="GENDER"
             value={gender}
-            required
             onChange={(e) => setgender(e.target.value)}
           />
 
