@@ -23,7 +23,7 @@ const Home = () => {
           </p>
           <Link to="/booknow">
 
-          <button className="btn1">Book now</button>
+          <button className="btn1">Book Now</button>
           </Link>
         </div>
       </div>

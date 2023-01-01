@@ -31,6 +31,7 @@
 
 }
 .buscollectionplace{
+    width: 50%;
     display: block;
     font-size: 40px;
     font-weight: bold;
@@ -38,9 +39,11 @@
      color: whitesmoke;
      position: relative;
      top: -250px;
-     left: 30%;
+    left: 20%; 
      box-sizing: border-box;
-     width: 50%;
+     width: 50%; 
+     align-items: center;
+     text-align: center;
 
 
 }

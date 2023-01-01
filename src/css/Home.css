@@ -59,6 +59,8 @@
     position: relative;
     top: 50px;
     left: 19%;
+    border: 1.5px solid black;
+
 }
 
 
@@ -94,8 +96,8 @@
     .h111{
        position: relative;
        top: 100px;
-       left: 10%;
-       font-size: 30px;
+       left: 8%;
+       font-size: 35px;
       letter-spacing: 2px;
        color: black;
        z-index: 11;
@@ -125,5 +127,6 @@
         position: relative;
         top: 70px;
         left: 10%;
+        border: 1.5px solid black;
     }
 }

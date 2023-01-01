@@ -42,7 +42,7 @@ const Navlink = () => {
                 </li>
                 <li id="l5">
                   <NavLink className="a" id="a5" to="/contact" >
-                 contact
+                 Contact
                   </NavLink>
                 </li>
                 <li id="l6">
