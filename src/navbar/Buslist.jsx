@@ -6,7 +6,7 @@ const Buslist = () => {
   return (
     <div>
         <div className="the-lesest" style={{marginTop:"20px",marginBottom:"30px"}}>
-        <h1>Book List</h1>
+        <h1>Bus List</h1>
         <div style={{width:"180px"}} className="underline-1"></div>
       </div>
       <div className="buslist">
