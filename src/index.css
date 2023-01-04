@@ -48,7 +48,6 @@ code {
   margin-top: 30px;
   padding-top: 10px;
   font-weight: 600;
-  
 }
 .logo3 {
   font-size: 71px;
@@ -56,7 +55,7 @@ code {
   color: #000000;
   opacity: 1;
   font-weight: bold;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 .navbar {
   height: 50px;
@@ -104,16 +103,16 @@ li {
 .a:hover:after {
   width: 100%;
 }
-.togle{
+.togle {
   height: 30px;
   width: 30px;
 }
-.toglebutton{
+.toglebutton {
   display: block;
   height: 30px;
   width: 30px;
   background-color: #f0f0f0;
-  border-radius: 0 10px   10px  0;
+  border-radius: 0 10px 10px 0;
   font-weight: bold;
   text-align: center;
   color: #b57c7c;
@@ -129,7 +128,7 @@ hr {
 .homesection1 {
   width: 100%;
   height: 506px;
-    margin-top: 20px;  
+  margin-top: 20px;
   /* position: absolute;
   top: 230px; */
 }
@@ -355,9 +354,7 @@ hr {
   text-decoration: none;
 }
 
-
 @media (min-width: 320px) and (max-width: 480px) {
-  
   .logo {
     width: 100%;
     height: 50px;
@@ -397,14 +394,12 @@ hr {
     height: 300px;
     width: 100%;
     z-index: 11;
-    
   }
   .navbar1 {
     height: 250px;
     width: 80%;
     margin: auto;
     z-index: 11;
-
   }
   .navbar ul {
     display: block;
@@ -412,75 +407,63 @@ hr {
     justify-content: space-around;
     list-style-type: none;
     z-index: 11;
-  
   }
-  
-  #l1{
+
+  #l1 {
     position: absolute;
     top: 40px;
     left: 45%;
     width: 20%;
-
   }
-  #l2{
+  #l2 {
     position: relative;
     top: 10px;
     left: 45%;
     width: 20%;
   }
-  #l3{
+  #l3 {
     position: relative;
     top: 50px;
     left: 45%;
     width: 20%;
-
-
-    
-
   }
-  #l4{
+  #l4 {
     position: relative;
     top: 90px;
     left: 45%;
     width: 20%;
-
   }
-  #l5{
+  #l5 {
     position: relative;
     top: 130px;
     left: 45%;
     width: 20%;
-
   }
-  #l6{
+  #l6 {
     position: relative;
     top: 170px;
     left: 45%;
-  width: 20%;
-
+    width: 20%;
   }
-  #l7{
+  #l7 {
     position: relative;
     top: 210px;
     left: 45%;
-  width: 20%;
-
+    width: 20%;
   }
-  #l8{
+  #l8 {
     position: relative;
     top: 250px;
     left: 45%;
-  width: 20%;
-
+    width: 20%;
   }
-  #l9{
+  #l9 {
     position: relative;
     top: 290px;
     left: 45%;
-  width: 20%;
-
+    width: 20%;
   }
-  
+
   .navbar ul li .a {
     text-decoration: none;
     font-size: 18px;
@@ -494,7 +477,7 @@ hr {
     opacity: 1;
     text-align: center;
   }
-  
+
   .a::after {
     content: " ";
     background-color: #000000;
@@ -510,19 +493,16 @@ hr {
   .a:hover:after {
     width: 100%;
   }
-  #a7{
-    
+  #a7 {
   }
-  #a8{
-
+  #a8 {
   }
-  #a7{
-
+  #a7 {
   }
-  .togle{
+  .togle {
     margin-top: -35px;
   }
-  .toglebutton{
+  .toglebutton {
     display: none;
   }
   hr {
@@ -538,7 +518,6 @@ hr {
     width: 100%;
     height: 415px;
     z-index: 1;
-    
   }
   .homebox {
     width: 100%;
@@ -640,7 +619,7 @@ hr {
     color: #000000;
     opacity: 1;
   }
-  .top-the-lesest h1{
+  .top-the-lesest h1 {
     font-size: 21px;
   }
   .top-underline-1 {

@@ -8,7 +8,7 @@ const Login = () => {
   const navigate = useNavigate();
   useEffect(() => {
     const auth = localStorage.getItem("user");
-    
+
     if (auth) {
       navigate("/");
     }
@@ -26,50 +26,48 @@ const Login = () => {
     result = await result.json();
     console.log("result");
     console.log(result);
-    if(result.admin===1){
+    if (result.admin === 1) {
       localStorage.setItem("user", JSON.stringify(result.user));
       localStorage.setItem("token", JSON.stringify(result.auth));
       navigate("/admin");
-    }else if (result.auth) {
+    } else if (result.auth) {
       localStorage.setItem("user", JSON.stringify(result.user));
       localStorage.setItem("token", JSON.stringify(result.auth));
       navigate("/");
-      alert("Login Successfully")
+      alert("Login Successfully");
     } else {
       alert("plz enter valid email and password");
     }
   };
   return (
     <div className="login">
-        <div className="login-box-1">
-
-        </div>
-        <div className="login-box-2">
-      <h1 className="register">Log In</h1>
-      <input
-        className="inputbox-1"
-        type="email"
-        name=""
-        id=""
-        required
-        placeholder="Admin Email - admin@123.com"
-        value={email}
-        onChange={(e) => setemail(e.target.value)}
-      />
-      <input
-        className="inputbox-1"
-        type="password"
-        name=""
-        required
-        id=""
-        placeholder="Admin Password - admin"
-        value={password}
-        onChange={(e) => setpassword(e.target.value)}
-      />
-      <br/>
-      <button onClick={handellogin} type="button" className="buttonsignup-1">
-        Log in
-      </button>
+      <div className="login-box-1"></div>
+      <div className="login-box-2">
+        <h1 className="register">Log In</h1>
+        <input
+          className="inputbox-1"
+          type="email"
+          name=""
+          id=""
+          required
+          placeholder="Admin Email - admin@123.com"
+          value={email}
+          onChange={(e) => setemail(e.target.value)}
+        />
+        <input
+          className="inputbox-1"
+          type="password"
+          name=""
+          required
+          id=""
+          placeholder="Admin Password - admin"
+          value={password}
+          onChange={(e) => setpassword(e.target.value)}
+        />
+        <br />
+        <button onClick={handellogin} type="button" className="buttonsignup-1">
+          Log in
+        </button>
       </div>
     </div>
   );

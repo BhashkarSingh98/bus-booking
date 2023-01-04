@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -13,7 +12,9 @@ const Admin = () => {
   }, []);
 
   const getproducts = async () => {
-    let result = await fetch("https://long-tan-crane-hem.cyclic.app/passengers");
+    let result = await fetch(
+      "https://long-tan-crane-hem.cyclic.app/passengers"
+    );
     result = await result.json();
     setproducts(result);
   };
@@ -22,7 +23,7 @@ const Admin = () => {
     <div className="product_list">
       <div className="the-lesest">
         <h1>Admin Page</h1>
-        <div style={{width:"180px"}} className="underline-1"></div>
+        <div style={{ width: "180px" }} className="underline-1"></div>
       </div>
 
       <div className="booknowbox">
@@ -41,16 +42,22 @@ const Admin = () => {
                   <p className="booknowseatno">{item.seatNo}</p>
                 </div>
                 <div className="booknowicons">
-                 
-                    <Link to={"/adminupdate/" + item._id}>
-                      <button style={{display:`${item.display}`}} className="bookseat">Not Booked</button>
-                    </Link>
-                    <Link to={"/adminupdate/" + item._id}>
-                    <button style={{visibility:`${item.visibility}`}} className="booked">Booked</button>
-                    </Link>
-
-                 
-                  
+                  <Link to={"/adminupdate/" + item._id}>
+                    <button
+                      style={{ display: `${item.display}` }}
+                      className="bookseat"
+                    >
+                      Not Booked
+                    </button>
+                  </Link>
+                  <Link to={"/adminupdate/" + item._id}>
+                    <button
+                      style={{ visibility: `${item.visibility}` }}
+                      className="booked"
+                    >
+                      Booked
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))

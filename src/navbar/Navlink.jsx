@@ -13,77 +13,88 @@ const Navlink = () => {
   };
   return (
     <>
-    <div className="toogle">
-    {show? <div>
-
-        {auth ? (
-          <div className="navbar">
-            <div className="navbar1">
-              <ul>
-                <li id="l1">
-                  <NavLink className="a" id="a1" to="/">
-                    Home
-                  </NavLink>
-                </li>
-                <li id="l3">
-                  <NavLink className="a" id="a3" to="/booknow">
-                    Book-Now
-                  </NavLink>
-                </li>
-                <li id="l2">
-                  <NavLink className="a" id="a2" to="/blog">
-                    Blog
-                  </NavLink>
-                </li>
-                <li id="l4">
-                  <NavLink className="a" id="a4" to="/about">
-                  About
-                  </NavLink>
-                </li>
-                <li id="l5">
-                  <NavLink className="a" id="a5" to="/contact" >
-                 Contact
-                  </NavLink>
-                </li>
-                <li id="l6">
-                  <NavLink className="a" id="a6" onClick={logout} to="/signup">
-                    Logout ({JSON.parse(auth).name})
-                  </NavLink>
-                </li>
-              </ul>
-            </div>
-            <hr />
+      <div className="toogle">
+        {show ? (
+          <div>
+            {auth ? (
+              <div className="navbar">
+                <div className="navbar1">
+                  <ul>
+                    <li id="l1">
+                      <NavLink className="a" id="a1" to="/">
+                        Home
+                      </NavLink>
+                    </li>
+                    <li id="l3">
+                      <NavLink className="a" id="a3" to="/booknow">
+                        Book-Now
+                      </NavLink>
+                    </li>
+                    <li id="l2">
+                      <NavLink className="a" id="a2" to="/blog">
+                        Blog
+                      </NavLink>
+                    </li>
+                    <li id="l4">
+                      <NavLink className="a" id="a4" to="/about">
+                        About
+                      </NavLink>
+                    </li>
+                    <li id="l5">
+                      <NavLink className="a" id="a5" to="/contact">
+                        Contact
+                      </NavLink>
+                    </li>
+                    <li id="l6">
+                      <NavLink
+                        className="a"
+                        id="a6"
+                        onClick={logout}
+                        to="/signup"
+                      >
+                        Logout ({JSON.parse(auth).name})
+                      </NavLink>
+                    </li>
+                  </ul>
+                </div>
+                <hr />
+              </div>
+            ) : (
+              <div className="navbar">
+                <div className="navbar1">
+                  <ul className="nav-ul right">
+                    <li>
+                      <NavLink
+                        className="a "
+                        id="signin-input-link"
+                        to="/signup"
+                      >
+                        Sign up
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink className="a" id="login-input-link" to="/login">
+                        login
+                      </NavLink>
+                    </li>
+                  </ul>
+                </div>
+                <hr />
+              </div>
+            )}
           </div>
-         ) : (
-          <div className="navbar">
-            <div className="navbar1">
-              <ul className="nav-ul right">
-                <li>
-                  <NavLink className="a " id="signin-input-link" to="/signup">Sign up</NavLink>
-                </li>
-                <li>
-                  <NavLink className="a" id="login-input-link" to="/login">login</NavLink>
-                </li>
-              </ul>
-            </div>
-            <hr />
-          </div>
-         )}
-         </div>:null}
-         
+        ) : null}
 
         <div className="togle" onClick={() => setshow(!show)}>
           <span className="toglebutton">&gt;</span>
           <Burger />
         </div>
       </div>
-  
     </>
   );
 };
 
 export default Navlink;
-
 
 // import React from "react";
 // import { useState } from "react";
@@ -172,17 +183,15 @@ export default Navlink;
 //           </div>
 //          )}
 //          </div>:null}
-         
 
 //         <div className="togle" onClick={() => setshow(!show)}>
 //           <span className="toglebutton">&gt;</span>
 //           <Burger />
 //         </div>
 //       </div>
-  
+
 //     </>
 //   );
 // };
 
 // export default Navlink;
-

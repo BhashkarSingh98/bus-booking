@@ -16,14 +16,14 @@ const Update = () => {
         `https://long-tan-crane-hem.cyclic.app/passenger/${params.id}`
       );
       result = await result.json();
-  
+
       console.log(result);
       setname(result.name);
       setgender(result.gender);
       setseatNo(result.seatNo);
     };
-    getproductdet()
-  },[params.id]);
+    getproductdet();
+  }, [params.id]);
 
   // const getproductdet = async () => {
   //   let result = await fetch(
@@ -38,7 +38,7 @@ const Update = () => {
   // };
 
   const updateproduct = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     console.log(name, gender, seatNo);
     let result = await fetch(
       `https://long-tan-crane-hem.cyclic.app/passenger/${params.id}`,
@@ -64,37 +64,34 @@ const Update = () => {
           <h1 className="register">Details</h1>
 
           <form onSubmit={updateproduct}>
+            <input
+              type="text"
+              className="inputbox"
+              placeholder="NAME"
+              value={name}
+              required
+              onChange={(e) => setname(e.target.value)}
+            />
 
-      
+            <input
+              type="text"
+              className="inputbox"
+              placeholder="GENDER"
+              value={gender}
+              required
+              onChange={(e) => setgender(e.target.value)}
+            />
 
-          <input
-            type="text"
-            className="inputbox"
-            placeholder="NAME"
-            value={name}
-            required
-            onChange={(e) => setname(e.target.value)}
-          />
+            <input
+              type="text"
+              className="inputbox"
+              placeholder="SEAT-NO"
+              value={seatNo}
+            />
 
-          <input
-            type="text"
-            className="inputbox"
-            placeholder="GENDER"
-            value={gender}
-            required
-            onChange={(e) => setgender(e.target.value)}
-          />
-
-          <input
-            type="text"
-            className="inputbox"
-            placeholder="SEAT-NO"
-            value={seatNo}
-          />
-
-          <button type="submit" className="buttonsignup" >
-            CONFIRM
-          </button>
+            <button type="submit" className="buttonsignup">
+              CONFIRM
+            </button>
           </form>
         </div>
       </div>

@@ -36,39 +36,36 @@
     transform: rotate(360deg);
   }
 } */
-.box-sinup{
- width: 80%;
- height: 90vh;
- position: relative;
- z-index: 0;
- display: flex;
- justify-content: center;
- margin: auto;
- border: 1.3px solid rgba(0, 0, 0, 0.635);
- border-radius: 20px;
- outline: none;
- margin-bottom: 40px;
-
-
+.box-sinup {
+  width: 80%;
+  height: 90vh;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: 1.3px solid rgba(0, 0, 0, 0.635);
+  border-radius: 20px;
+  outline: none;
+  margin-bottom: 40px;
 }
-.from-box-1{
+.from-box-1 {
   width: 40%;
   background-image: url(../public/images/online-registration-sign-up-with-man-sitting-near-smartphone_268404-95.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   margin-top: -30px;
- 
 }
-.from-box-2{
+.from-box-2 {
   width: 40%;
   text-align: center;
 }
-.register{
-margin-top: 60px;
-margin-bottom: 60px;
+.register {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
-.inputbox{
+.inputbox {
   height: 20px;
   width: 70%;
   margin: auto;
@@ -76,64 +73,54 @@ margin-bottom: 60px;
   padding: 10px;
   border-radius: 10px;
   border: 1.6px solid rgba(81, 87, 174, 0.644);
-
-
 }
-.buttonsignup{
+.buttonsignup {
   height: 40px;
   width: 50%;
   border-radius: 10px;
   border: 1.6px solid #0000ff07;
   background-color: #0000ffa0;
   color: antiquewhite;
-
-
 }
-.login{
+.login {
   width: 80%;
- height: 90vh;
- position: relative;
- z-index: 0;
- display: flex;
- justify-content: center;
- margin: auto;
- border: 1.3px solid rgba(0, 0, 0, 0.635);
- border-radius: 20px;
- outline: none;
- margin-bottom: 40px;
-
+  height: 90vh;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: 1.3px solid rgba(0, 0, 0, 0.635);
+  border-radius: 20px;
+  outline: none;
+  margin-bottom: 40px;
 }
-.update{
+.update {
   width: 80%;
- height: 100vh;
- position: relative;
- z-index: 0;
- display: flex;
- justify-content: center;
- margin: auto;
- border: 1.3px solid rgba(0, 0, 0, 0.635);
- border-radius: 20px;
- outline: none;
- margin-bottom: 40px;
-
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: 1.3px solid rgba(0, 0, 0, 0.635);
+  border-radius: 20px;
+  outline: none;
+  margin-bottom: 40px;
 }
-.login-box-1{
+.login-box-1 {
   width: 40%;
   background-image: url(../public/images/tablet-login-concept-illustration_114360-7883.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   margin-top: -30px;
- 
-
 }
-.login-box-2{
+.login-box-2 {
   width: 40%;
   text-align: center;
- 
-
 }
-.inputbox-1{
+.inputbox-1 {
   height: 20px;
   width: 70%;
   margin: auto;
@@ -141,56 +128,51 @@ margin-bottom: 60px;
   padding: 10px;
   border-radius: 10px;
   border: 1.6px solid rgba(13, 13, 16, 0.644);
-
-
 }
-.buttonsignup-1{
+.buttonsignup-1 {
   height: 40px;
   width: 50%;
   border-radius: 10px;
   border: 1.6px solid #0000ff07;
   background-color: #050505ec;
   color: rgb(249, 247, 244);
-
-
 }
-#ab{
+#ab {
   font-size: 15px;
   margin-right: -10px;
   position: absolute;
 }
-.article-box-1{
+.article-box-1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.product_list{
+.product_list {
 }
-.icons{
+.icons {
   height: 30px;
   width: 50px;
   display: flex;
-  margin-left:85%;
+  margin-left: 85%;
   margin-top: -20px;
   margin-bottom: 10px;
 }
-.edit{
+.edit {
   font-size: 20px;
-  color:#00008b;
+  color: #00008b;
   margin-left: -200%;
   margin-top: -15px;
 }
-.deletebtn{
+.deletebtn {
   font-size: 20px;
-  color:#d80000;
+  color: #d80000;
   margin-left: -40%;
   margin-top: -3px;
   display: block;
-  
 }
-.searchblog{
+.searchblog {
   position: absolute;
   left: 42%;
   top: 300px;
@@ -200,31 +182,28 @@ margin-bottom: 60px;
   outline: none;
   padding-left: 20px;
   border: 1px solid rgb(137, 33, 33);
-  
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  #ab{
+  #ab {
     font-size: 15px;
     margin-right: -10px;
     position: absolute;
     top: 313px;
     margin-left: 36%;
     font-size: 19px;
-
-
   }
-  #signin-input-link{
+  #signin-input-link {
     position: absolute;
     top: 100px;
     left: 10%;
   }
-  #login-input-link{
+  #login-input-link {
     position: absolute;
     top: 100px;
     left: 50%;
   }
-  .box-sinup{
+  .box-sinup {
     width: 90%;
     height: 100vh;
     position: absolute;
@@ -238,65 +217,58 @@ margin-bottom: 60px;
     outline: none;
     margin-bottom: 40px;
     left: 5%;
-   
-   
-   }
-   .from-box-1{
-    display: none;
-     width: 40%;
-     background-image: url(../public/images/online-registration-sign-up-with-man-sitting-near-smartphone_268404-95.webp);
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: contain;
-     margin-top: -30px;
-    
-   }
-   .from-box-2{
-     width: 1000%;
-     text-align: center;
-   }
-   .register{
-   margin-top: 25px;
-   margin-bottom: 60px;
-   }
-   .inputbox{
-     height: 20px;
-     width: 70%;
-     margin: auto;
-     margin-bottom: 30px;
-     padding: 10px;
-     border-radius: 10px;
-     border: 1.6px solid rgba(81, 87, 174, 0.644);
-    
-   
-   
-   }
-   .buttonsignup{
-     height: 40px;
-     width: 50%;
-     border-radius: 10px;
-     border: 1.6px solid #0000ff07;
-     background-color: #0000ffa0;
-     color: antiquewhite;
-     margin-bottom: 100px;
-   }   
-  .login{
-    width: 90%;
-   height: 90vh;
-   position: absolute;
-   top: 170px;
-   z-index: 0;
-   display: flex;
-   justify-content: center;
-   margin: auto;
-   border: 1.3px solid rgba(0, 0, 0, 0.635);
-   border-radius: 20px;
-   outline: none;
-   margin-bottom: 70px;
-   margin-left: 5%;
-  
   }
-  .login-box-1{
+  .from-box-1 {
+    display: none;
+    width: 40%;
+    background-image: url(../public/images/online-registration-sign-up-with-man-sitting-near-smartphone_268404-95.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: -30px;
+  }
+  .from-box-2 {
+    width: 1000%;
+    text-align: center;
+  }
+  .register {
+    margin-top: 25px;
+    margin-bottom: 60px;
+  }
+  .inputbox {
+    height: 20px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1.6px solid rgba(81, 87, 174, 0.644);
+  }
+  .buttonsignup {
+    height: 40px;
+    width: 50%;
+    border-radius: 10px;
+    border: 1.6px solid #0000ff07;
+    background-color: #0000ffa0;
+    color: antiquewhite;
+    margin-bottom: 100px;
+  }
+  .login {
+    width: 90%;
+    height: 90vh;
+    position: absolute;
+    top: 170px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 1.3px solid rgba(0, 0, 0, 0.635);
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 70px;
+    margin-left: 5%;
+  }
+  .login-box-1 {
     width: 40%;
     background-image: url(../public/images/tablet-login-concept-illustration_114360-7883.webp);
     background-repeat: no-repeat;
@@ -304,16 +276,12 @@ margin-bottom: 60px;
     background-size: contain;
     margin-top: -30px;
     display: none;
-   
-  
   }
-  .login-box-2{
+  .login-box-2 {
     width: 100%;
     text-align: center;
-   
-  
   }
-  .inputbox-1{
+  .inputbox-1 {
     height: 20px;
     width: 70%;
     margin: auto;
@@ -321,10 +289,8 @@ margin-bottom: 60px;
     padding: 10px;
     border-radius: 10px;
     border: 1.6px solid rgba(13, 13, 16, 0.644);
-  
-  
   }
-  .buttonsignup-1{
+  .buttonsignup-1 {
     height: 40px;
     width: 50%;
     border-radius: 10px;
@@ -332,10 +298,8 @@ margin-bottom: 60px;
     background-color: #050505ec;
     color: rgb(249, 247, 244);
     margin-bottom: 100px;
-  
-  
   }
-  .searchblog{
+  .searchblog {
     position: relative;
     left: 40%;
     top: -115px;
@@ -345,14 +309,8 @@ margin-bottom: 60px;
     outline: none;
     padding-left: 20px;
     border: 1px solid rgb(137, 33, 33);
-    
   }
-  .update{
+  .update {
     margin-top: 50px;
   }
-
-  
-  
 }
-
-  

@@ -16,14 +16,14 @@ const Adminpdate = () => {
         `https://long-tan-crane-hem.cyclic.app/passenger/${params.id}`
       );
       result = await result.json();
-  
+
       console.log(result);
       setname(result.name);
       setgender(result.gender);
       setseatNo(result.seatNo);
     };
-    getproductdet()
-  },[params.id]);
+    getproductdet();
+  }, [params.id]);
 
   // const getproductdet = async () => {
   //   let result = await fetch(
@@ -61,7 +61,17 @@ const Adminpdate = () => {
         <div className="from-box-1"></div>
         <div className="login-box-2">
           <h1 className="register">Details</h1>
-          <p style={{color:"red",marginTop:"-30px",marginBottom:"20px",width:"90%",fontSize:"1rem"}}>Please remove Name and Gender</p>
+          <p
+            style={{
+              color: "red",
+              marginTop: "-30px",
+              marginBottom: "20px",
+              width: "90%",
+              fontSize: "1rem",
+            }}
+          >
+            Please remove Name and Gender
+          </p>
 
           <input
             type="text"
@@ -86,7 +96,11 @@ const Adminpdate = () => {
             value={seatNo}
           />
 
-          <button style={{backgroundColor:"#FF0000"}} className="buttonsignup" onClick={updateproduct}>
+          <button
+            style={{ backgroundColor: "#FF0000" }}
+            className="buttonsignup"
+            onClick={updateproduct}
+          >
             REMOVE
           </button>
         </div>

@@ -22,13 +22,12 @@ const Home = () => {
             DON'T COMPROMISE ON OTHES! GET FLAT 30% OFF FOR NEW USERS.
           </p>
           <Link to="/booknow">
-
-          <button className="btn1">Book Now</button>
+            <button className="btn1">Book Now</button>
           </Link>
         </div>
       </div>
-      <Buscollection/>
-      <Searchbar/>
+      <Buscollection />
+      <Searchbar />
     </div>
   );
 };
