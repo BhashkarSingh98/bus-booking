@@ -17,7 +17,7 @@ const Buslist = () => {
         <div style={{ width: "180px" }} className="underline-1"></div>
       </div>
       <div className="buslist">
-        <Link to="/bookseat">
+        <Link to="/bookseat" style={{textDecoration:"none"}}>
           <div className="bus-card">
             <img
               className="buslist-img"
@@ -41,7 +41,7 @@ const Buslist = () => {
             <button className="buslist-btn">Book Now</button>
           </div>
         </Link>
-        <Link to="/bookseat">
+        <Link to="/bookseat" style={{textDecoration:"none"}}>
           <div className="bus-card">
             <img
               className="buslist-img"
@@ -65,7 +65,7 @@ const Buslist = () => {
             <button className="buslist-btn">Book Now</button>
           </div>
         </Link>
-        <Link to="/bookseat">
+        <Link to="/bookseat" style={{textDecoration:"none"}}>
           <div className="bus-card">
             <img
               className="buslist-img"
@@ -89,7 +89,7 @@ const Buslist = () => {
             <button className="buslist-btn">Book Now</button>
           </div>
         </Link>
-        <Link to="/bookseat">
+        <Link to="/bookseat" style={{textDecoration:"none"}}>
           <div className="bus-card">
             <img
               className="buslist-img"
@@ -113,7 +113,7 @@ const Buslist = () => {
             <button className="buslist-btn">Book Now</button>
           </div>
         </Link>
-        <Link to="/bookseat">
+        <Link to="/bookseat" style={{textDecoration:"none"}}>
           <div className="bus-card">
             <img
               className="buslist-img"
@@ -137,7 +137,7 @@ const Buslist = () => {
             <button className="buslist-btn">Book Now</button>
           </div>
         </Link>
-        <Link to="/bookseat">
+        <Link to="/bookseat" style={{textDecoration:"none"}}>
           <div className="bus-card">
             <img
               className="buslist-img"
