@@ -96,7 +96,7 @@ const Buslist = () => {
               src="https://media.istockphoto.com/id/1372188593/photo/modern-city-bus.jpg?b=1&s=170667a&w=0&k=20&c=-2D1HiCF5NCus9CWUnziiTeKD_x8n1tmiZfJJ_GDzXk="
               alt=""
             />
-            <p className="busname">Himalayn</p>
+            <p className="busname">Himalayan</p>
             <p className="buslist-add1">
               <span>Dehradun</span> <span>-To- </span>
               <span>Goa</span>
