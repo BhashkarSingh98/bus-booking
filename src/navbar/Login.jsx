@@ -65,7 +65,7 @@ const Login = () => {
           onChange={(e) => setpassword(e.target.value)}
         />
         <br />
-        <button onClick={handellogin} type="button" className="buttonsignup-1">
+        <button style={{cursor:"pointer"}} onClick={handellogin} type="button" className="buttonsignup-1">
           Log in
         </button>
       </div>

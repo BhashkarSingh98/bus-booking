@@ -66,7 +66,7 @@ const Signup = () => {
         />
         <br />
         <Link to="/login">
-          <button onClick={collectdata} type="button" className="buttonsignup">
+          <button style={{cursor:"pointer"}} onClick={collectdata} type="button" className="buttonsignup">
             sign up
           </button>
         </Link>
